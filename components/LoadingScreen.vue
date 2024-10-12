@@ -9,7 +9,7 @@
     <button
         v-else
         @click="enterSpace"
-        class="enter-button text-white text-2xl border-2 border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform bg-black"
+        class="enter-button uppercase text-white text-2xl border-2 border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform bg-black"
     >
       Enter
     </button>
