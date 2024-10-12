@@ -12,9 +12,12 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Quicksand: true,
+      Copperplate: true,
+      Roboto: true,
     }
   },
   imports: {
     autoImport: false
-  }
+  },
+  css: ['~/assets/css/main.css'],
 })
