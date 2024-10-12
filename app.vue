@@ -24,7 +24,7 @@ const entered = ref(false)
 
 <style lang='css'>
 * {
-  font-family: Copperplate, Roboto, SansSerif;
+  font-family: Roboto, Copperplate, SansSerif;
 }
 
 body {
