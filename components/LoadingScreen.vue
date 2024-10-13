@@ -23,9 +23,10 @@ import MazeBackground from './MazeBackground.vue'
 
 const loadingProgress = ref(0)
 const loadingComplete = ref(false)
+const emit = defineEmits(['enter'])
 
 const enterSpace = () => {
-  playSound('enter.mp3')
+  // playSound('enter.mp3')
   emit('enter')
 }
 
@@ -35,7 +36,7 @@ const playSound = (soundFile) => {
 }
 
 onMounted(() => {
-  playSound('background.mp3')
+  // playSound('background.mp3')
   gsap.to(loadingProgress, {
     value: 100,
     duration: 2.5,
