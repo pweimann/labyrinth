@@ -1,16 +1,16 @@
 <template>
-  <section class='py-10 md:py-16' :class='invert ? "bg-dark-rosa" : "bg-light-rosa"'>
+  <section class='py-10 md:py-16' :class='invert ? "bg-purple-dark" : "bg-purple-light"'>
     <FadeInTransition>
       <div class='container mx-auto px-4 text-center mb-6 md:mb-12'>
         <h2 v-if='title' class='text-2xl md:text-5xl font-bold uppercase leading-tight'
-            :class='invert ? "text-white" : "text-dark-rosa"'>{{title}}</h2>
+            :class='invert ? "text-white" : "text-purple-dark"'>{{title}}</h2>
       </div>
       <div class='tabs-wrapper full-width' :class='reverse ? "reverse" : ""'>
         <div class='tabs-nav full-width md:w-1/3'>
           <ul>
             <li v-for='navItem in tabsNavList' @click='clickTabNavItem(navItem)'
                 class='tabs-nav-item my-2'
-                :class='invert ? "text-white" : "text-dark-rosa",
+                :class='invert ? "text-white" : "text-purple-dark",
                   isActiveItem(navItem) ? "tab-nav-item--active" : "",
                   reverse ? "mr-8 ml-4": "ml-8 mr-4"'>
               <div class='text-lg md:text-2xl font-bold flex align-middle'>
@@ -20,7 +20,7 @@
               </div>
               <p class='text-1xl text-justify leading-normal mb-4'
                  v-show='checkVisibilitOfParagraph(navItem)'
-                 :class='invert ? "text-white" : "text-dark-rosa"'>
+                 :class='invert ? "text-white" : "text-purple-dark"'>
                 {{ navItem.description }}</p>
             </li>
           </ul>
@@ -30,7 +30,7 @@
         </div>
         <div class='container px-4 text-center md:hidden'>
           <p class='text-1xl leading-normal mb-4'
-             :class='invert ? "text-white" : "text-dark-rosa"'>
+             :class='invert ? "text-white" : "text-purple-dark"'>
             {{ activeNavItem.description }}</p>
         </div>
       </div>

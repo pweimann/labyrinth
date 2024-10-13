@@ -8,8 +8,8 @@
     <div class='container mx-auto px-4'>
       <div class='w-3/4 mx-auto text-center'>
         <nuxt-img src='/logo.svg' />
-        <!--        <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-6'>Vertical Abode</h2>-->
-        <p class='text-dark-rosa text-1xl md:text-3xl leading-normal mb-4'>Unsere Vision für das
+        <!--        <h2 class='text-purple-dark text-2xl md:text-5xl font-bold uppercase leading-tight mb-6'>Vertical Abode</h2>-->
+        <p class='text-purple-dark text-1xl md:text-3xl leading-normal mb-4'>Unsere Vision für das
           Neubauprojekt in Berlin-Kreuzberg ist es, ein
           innovatives und integriertes Lebenskonzept zu schaffen, das Wohnen, Arbeiten, Sport und kreative Freiräume
           miteinander verbindet. Wir möchten eine inspiriernde und produktive Atmosphäre für die Besucher und Bewohner
@@ -31,7 +31,7 @@
   <MarqueeLabel class='my-16' :label='secondLabel' />
   <BackgroundImageSection />
   <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert />
-  <footer class='w-full flex align-center justify-center text-white text-xs bg-dark-rosa sm:py-2'>
+  <footer class='w-full flex align-center justify-center text-white text-xs bg-purple-dark sm:py-2'>
     <NuxtLink to='/impressum'>Impressum</NuxtLink>
   </footer>
 </template>

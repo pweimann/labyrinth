@@ -3,9 +3,9 @@
     <FadeInTransition>
       <div class='container mx-auto px-4'>
         <div class='w-3/4 mx-auto text-center'>
-          <h2 class='text-dark-rosa text-3xl md:text-5xl font-bold uppercase leading-tight mb-4'>VERTICAL ABODE</h2>
-          <p class='text-dark-rosa text-2xl md:text-3xl leading-normal mb-4'>ist zeitlos und warm</p>
-          <p class='text-dark-rosa text-sm md:text-1xl leading-normal mb-4'>Das vertical Village ist
+          <h2 class='text-purple-dark text-3xl md:text-5xl font-bold uppercase leading-tight mb-4'>VERTICAL ABODE</h2>
+          <p class='text-purple-dark text-2xl md:text-3xl leading-normal mb-4'>ist zeitlos und warm</p>
+          <p class='text-purple-dark text-sm md:text-1xl leading-normal mb-4'>Das vertical Village ist
             modern und konzentriert sich auf den Nutzen des Raumes. Es schafft eine vertikale Gemeinschaft in einem
             dichter besiedelten Bereich in Berlin Kreuzberg. Das zentrale Atrium kreiert eine offene,
             lichtdurchflutete und grüne Insel als Zentrum der Gemeinschaft.</p>
