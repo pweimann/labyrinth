@@ -67,6 +67,9 @@ onMounted(() => {
   position: relative;
   overflow: hidden;
   animation: button-glow 3s ease-in-out infinite;
+  font-weight: bold;
+  font-family: Roboto;
+  letter-spacing: 1.2px;
 }
 
 .enter-button::before {
@@ -95,7 +98,8 @@ onMounted(() => {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('path-to-fog-image.png');
+  //background-image: url('/fog-4.svg');
+  background-size: cover;
   animation: fog-animation 60s linear infinite;
   opacity: 0.5;
   pointer-events: none;
