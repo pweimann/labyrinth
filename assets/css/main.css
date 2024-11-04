@@ -5,7 +5,3 @@
 LoadingScreen {
     @apply bg-black text-white;
 }
-
-body {
-    @apply bg-white text-purple-dark;
-}

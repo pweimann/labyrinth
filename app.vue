@@ -24,6 +24,11 @@ const entered = ref(false)
 </script>
 
 <style lang='css'>
+body {
+  background-color: #fff;
+  color: #382f73;
+}
+
 * {
   font-family: Roboto, Copperplate, SansSerif;
 }
