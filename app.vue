@@ -1,6 +1,7 @@
 <template>
   <div>
-    <LoadingScreen v-if="!entered" @enter="entered = true" />
+<!--    <LoadingScreen v-if="!entered" @enter="entered = true" />-->
+    <LoadingScreen v-if="false" @enter="entered = true" />
     <template v-else>
       <header>
         <!-- Header content goes here -->
@@ -16,7 +17,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import {ref} from 'vue'
 import LoadingScreen from './components/LoadingScreen.vue'
 
 const entered = ref(false)
@@ -25,10 +26,5 @@ const entered = ref(false)
 <style lang='css'>
 * {
   font-family: Roboto, Copperplate, SansSerif;
-}
-
-body {
-  background-color: black;
-  color: white;
 }
 </style>

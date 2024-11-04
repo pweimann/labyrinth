@@ -7,20 +7,20 @@
   <FadeInTransition>
     <div class='container mx-auto px-4'>
       <div class='w-3/4 mx-auto text-center'>
-        <nuxt-img src='/logo.svg' />
-        <!--        <h2 class='text-purple-dark text-2xl md:text-5xl font-bold uppercase leading-tight mb-6'>Vertical Abode</h2>-->
-        <p class='text-purple-dark text-1xl md:text-3xl leading-normal mb-4'>Unsere Vision für das
+        <h2 class='text-purple-dark text-2xl md:text-5xl font-bold uppercase leading-tight mb-6'>Labyrinth</h2>
+        <p class='text-purple-dark text-1xl md:text-3xl leading-normal -mb-20'>Unsere Vision für das
           Neubauprojekt in Berlin-Kreuzberg ist es, ein
           innovatives und integriertes Lebenskonzept zu schaffen, das Wohnen, Arbeiten, Sport und kreative Freiräume
           miteinander verbindet. Wir möchten eine inspiriernde und produktive Atmosphäre für die Besucher und Bewohner
           bereitstellen, in welcher sie sich gerne aufhalten.</p>
+        <nuxt-img src='/Pikto Modulare Bauweise.svg' />
       </div>
       <!-- TODO Teaser Renderings   -->
     </div>
   </FadeInTransition>
   <MarqueeLabel class='my-16' :label='firstLabel' />
   <ImageCarousel />
-  <TabSection :tabs-nav-list='tabsNavList' title='Nutzung' />
+  <TabSection :tabs-nav-list='tabsNavList' title='Grundrisse' />
   <section>
     <FadeInTransition>
       <nuxt-img src='/3D-Schnitt.jpg' class='w-full mt-10' />
@@ -44,28 +44,43 @@ import Impressum from '~/pages/impressum.vue'
 
 const tabsNavList: Ref<TabNavItem[]> = ref([
   {
-    title: 'Freizeit',
-    imageSrc: '/tabs/Freizeit_Sport_neu.png',
+    title: 'Level 1',
+    imageSrc: '/tabs/GR 1.svg',
     description: 'Ein integrierter Freizeitbereich, der sich auf Sport, Fitness und Entspannung konzentriert, ist ebenfalls ein wichtiger Bestandteil des Gebäudes. Zugleich bietet das Gebäude auch Raum für Entspannung und Yoga. Außerdem gibt es kreative Freiräume, in denen Bewohner und Be- sucher ihre Kreativität und ihr handwerkliches Können ausleben können. Diese Räume können für eine Vielzahl von Aktivitäten genutzt werden, von Kunst- bis hin zu DIY-Projekten.'
   },
   {
-    title: 'Arbeiten',
-    imageSrc: '/tabs/Arbeiten_neu.png',
+    title: 'Level 2',
+    imageSrc: '/tabs/GR 2.svg',
     description: 'Die Arbeitsflächen sind individuell anpassbar und können für eine Vielzahl von Geschäftsbedürfnissen genutzt werden, von Co-Working-Räumen bis hin zu kleinen Büros und Atelierflächen.'
   },
   {
-    title: 'Wohnen',
-    imageSrc: '/tabs/Wohnen_neu.png',
+    title: 'Level 3',
+    imageSrc: '/tabs/GR 3.svg',
     description: 'Jede Wohnung verfügt über eine offene und helle Grundfläche mit hohen Decken, um maximale Bewegungsfreiheit und Licht zu bieten. Zusätzlich bieten Balkone, Loggien und Auskragungen eine Erhöhung der Wohnqualität und ermöglichen eine nahtlose Verbindung vom Innen- und Außenraum.'
   },
   {
-    title: 'Grüne Lunge',
-    imageSrc: '/tabs/Grüne_Lunge_neu.png',
+    title: 'Level 4',
+    imageSrc: '/tabs/GR 4.svg',
     description: 'Das lichtdurchflutete Atrium fungiert als grüne Lunge des Gebäudes. Als Zentrum dient es der Begegnung zwischen Besucher und Bewohner und lässt die verschiedenen Nutzungen innerhalb des Gebäudes miteinander verschmelzen. Die Treppe im Erdgeschoss lädt zum verweilen, beobachten und als Treffpunkt ein.'
   },
   {
-    title: 'Mobilität',
-    imageSrc: '/tabs/Mobilität_neu.png',
+    title: 'Level 5',
+    imageSrc: '/tabs/GR 5.svg',
+    description: 'Durch eine Tiefgarage mit abgetrennten Car-Sharing Plätzen und integrierten E-Ladesäulen wird ein großer Beitrag zur Mobilitätswende geleistet. Der im Erdgeschoss verortete, abschließbare Fahrradraum mit Umkleiden und Duschen unterstützt die Wahl des Verkehrsmittels hin zum Fahrrad oder E-Bike und ermöglicht sichere und trockene Parkflächen hierfür. '
+  },
+  {
+    title: 'Level 6',
+    imageSrc: '/tabs/GR 6.svg',
+    description: 'Durch eine Tiefgarage mit abgetrennten Car-Sharing Plätzen und integrierten E-Ladesäulen wird ein großer Beitrag zur Mobilitätswende geleistet. Der im Erdgeschoss verortete, abschließbare Fahrradraum mit Umkleiden und Duschen unterstützt die Wahl des Verkehrsmittels hin zum Fahrrad oder E-Bike und ermöglicht sichere und trockene Parkflächen hierfür. '
+  },
+  {
+    title: 'Level 7',
+    imageSrc: '/tabs/GR 7.svg',
+    description: 'Durch eine Tiefgarage mit abgetrennten Car-Sharing Plätzen und integrierten E-Ladesäulen wird ein großer Beitrag zur Mobilitätswende geleistet. Der im Erdgeschoss verortete, abschließbare Fahrradraum mit Umkleiden und Duschen unterstützt die Wahl des Verkehrsmittels hin zum Fahrrad oder E-Bike und ermöglicht sichere und trockene Parkflächen hierfür. '
+  },
+  {
+    title: 'Level 8',
+    imageSrc: '/tabs/GR 8.svg',
     description: 'Durch eine Tiefgarage mit abgetrennten Car-Sharing Plätzen und integrierten E-Ladesäulen wird ein großer Beitrag zur Mobilitätswende geleistet. Der im Erdgeschoss verortete, abschließbare Fahrradraum mit Umkleiden und Duschen unterstützt die Wahl des Verkehrsmittels hin zum Fahrrad oder E-Bike und ermöglicht sichere und trockene Parkflächen hierfür. '
   }
 ])
@@ -88,7 +103,7 @@ const saveOurPlanetList: Ref<TabNavItem[]> = ref([
   }
 ])
 
-const firstLabel = 'save our <strong>planet</strong> +++ one earth - one chance +++&nbsp;\n'
+const firstLabel = 'find the <strong>exit</strong> +++ one earth - one labryrinth +++&nbsp;\n'
 const secondLabel = 'reduce your <strong>footprint</strong> +++ increase your impact +++&nbsp;\n'
 </script>
 <style lang='css'>
