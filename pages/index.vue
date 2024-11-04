@@ -14,6 +14,7 @@
           miteinander verbindet. Wir möchten eine inspiriernde und produktive Atmosphäre für die Besucher und Bewohner
           bereitstellen, in welcher sie sich gerne aufhalten.</p>
         <nuxt-img src='/Pikto Modulare Bauweise.svg' />
+        <nuxt-img src='/Pikto Röhre Querschnitt .svg' />
       </div>
       <!-- TODO Teaser Renderings   -->
     </div>
@@ -104,7 +105,7 @@ const saveOurPlanetList: Ref<TabNavItem[]> = ref([
 ])
 
 const firstLabel = 'find the <strong>exit</strong> +++ one earth - one labryrinth +++&nbsp;\n'
-const secondLabel = 'reduce your <strong>footprint</strong> +++ increase your impact +++&nbsp;\n'
+const secondLabel = 'wer das liest <strong>bleibt</strong> +++ dumm +++&nbsp;\n'
 </script>
 <style lang='css'>
 .hero-placeholder {
