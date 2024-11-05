@@ -13,13 +13,13 @@
       </div>
       <div class='bg-purple-dark collage-container mt-8 md:mt-16 px-4 w-full'>
         <div class='collage-left-side'>
-          <img src='/renderings/Ansicht Eingang .svg' alt='Rendering 1'
+          <img src='/renderings/AnsichtEingang.svg' alt='Rendering 1'
                class='bg-white collage-left-side-item rounded-3xl object-cover collage-left-side-first'>
-          <img src='/renderings/Schnitt A-A.svg' alt='Rendering 2'
+          <img src='/renderings/SchnittA-A.svg' alt='Rendering 2'
                class='bg-white collage-left-side-item-above sm:w-1/6 rounded-3xl object-cover collage-left-side-second'>
         </div>
         <div class='collage-right-side'>
-          <img src='/renderings/Schnitt B-B.svg' alt='Rendering 3'
+          <img src='/renderings/SchnittB-B.svg' alt='Rendering 3'
                class='bg-white collage-right-side-item rounded-3xl object-cover'>
 <!--          <img src='/renderings/Persp4.jpg' alt='Rendering 4'-->
 <!--               class='collage-right-side-item-above sm:w-1/6 rounded-3xl object-cover'>-->
