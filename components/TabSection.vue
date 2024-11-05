@@ -1,5 +1,5 @@
 <template>
-  <section class='py-10 md:py-16' :class='invert ? "bg-purple-dark" : "bg-red-400"'>
+  <section class='py-10 md:py-16' :class='invert ? "bg-purple-dark" : "bg-purple-ultra-light"'>
     <FadeInTransition>
       <div class='container mx-auto px-4 text-center mb-6 md:mb-12'>
         <h2 v-if='title' class='text-2xl md:text-5xl font-bold uppercase leading-tight'

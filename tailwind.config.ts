@@ -11,6 +11,7 @@ export default <Partial<Config>>{
         'purple-dark': '#382f73',
         'black-light': '#00010f',
         'purple-light': '#8083bf',
+        'purple-ultra-light': '#c394d7',
         grey: '#a6a6a6',
         'black-dark': '#0d0d0d',
       }

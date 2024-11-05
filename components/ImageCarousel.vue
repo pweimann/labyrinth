@@ -1,5 +1,5 @@
 <template>
-  <section class='container mx-auto'>
+  <section class='bg-purple-dark'>
     <div id='carouselExampleIndicators' class='carousel slide relative' data-bs-ride='carousel'>
       <div class='carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4'>
         <button
@@ -38,7 +38,7 @@
       <div class='carousel-inner relative w-full overflow-hidden'>
         <div class='carousel-item active float-left w-full'>
           <nuxt-img
-            src='/piktos/pikto_1.png'
+            src='/PiktoRöhreQuerschnitt.svg'
             class='block w-full'
             alt=''
             preload
@@ -46,36 +46,36 @@
         </div>
         <div class='carousel-item float-left w-full'>
           <nuxt-img
-            src='/piktos/pikto_2.png'
+            src='/PiktoModulareBauweise.svg'
             class='block w-full'
             alt=''
             preload
           />
         </div>
-        <div class='carousel-item float-left w-full'>
-          <nuxt-img
-            src='/piktos/pikto_3.png'
-            class='block w-full'
-            alt=''
-            preload
-          />
-        </div>
-        <div class='carousel-item float-left w-full'>
-          <nuxt-img
-            src='/piktos/pikto_4.png'
-            class='block w-full'
-            alt=''
-            preload
-          />
-        </div>
-        <div class='carousel-item float-left w-full'>
-          <nuxt-img
-            src='/piktos/pikto_5.png'
-            class='block w-full'
-            alt=''
-            preload
-          />
-        </div>
+<!--        <div class='carousel-item float-left w-full'>-->
+<!--          <nuxt-img-->
+<!--            src='/piktos/pikto_3.png'-->
+<!--            class='block w-full'-->
+<!--            alt=''-->
+<!--            preload-->
+<!--          />-->
+<!--        </div>-->
+<!--        <div class='carousel-item float-left w-full'>-->
+<!--          <nuxt-img-->
+<!--            src='/piktos/pikto_4.png'-->
+<!--            class='block w-full'-->
+<!--            alt=''-->
+<!--            preload-->
+<!--          />-->
+<!--        </div>-->
+<!--        <div class='carousel-item float-left w-full'>-->
+<!--          <nuxt-img-->
+<!--            src='/piktos/pikto_5.png'-->
+<!--            class='block w-full'-->
+<!--            alt=''-->
+<!--            preload-->
+<!--          />-->
+<!--        </div>-->
       </div>
       <button
         class='carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0'
