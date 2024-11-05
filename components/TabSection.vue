@@ -66,13 +66,13 @@ const checkVisibilitOfParagraph = (item: TabNavItem) => {
 }
 </script>
 <style lang='css' scoped>
-.bg-test {
-  background-color: #8083bf,
-}
 @media (min-width: 320px) {
   .tabs-wrapper {
     display: flex;
     flex-direction: column;
+  }
+  .scale {
+    transform: scale(2.5);
   }
 }
 
@@ -85,6 +85,10 @@ const checkVisibilitOfParagraph = (item: TabNavItem) => {
   /*noinspection CssUnusedSymbol*/
   .reverse {
     flex-direction: row-reverse;
+  }
+
+  .scale {
+    transform: scale(5);
   }
 }
 
@@ -131,9 +135,5 @@ const checkVisibilitOfParagraph = (item: TabNavItem) => {
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
-}
-
-.scale {
-  transform: scale(5);
 }
 </style>
