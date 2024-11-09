@@ -8,39 +8,56 @@
     <div class='container mx-auto px-4'>
       <div class='w-3/4 mx-auto text-center'>
         <h2 class='text-purple-dark text-2xl md:text-5xl font-bold uppercase leading-tight mb-6'>Labyrinth</h2>
-        <p class='text-purple-dark text-1xl md:text-3xl leading-normal -mb-20'>Unsere Vision für das
+        <p class='text-purple-dark text-md md:text-xl leading-normal'>Unsere Vision für das
           Neubauprojekt in Berlin-Kreuzberg ist es, ein
           innovatives und integriertes Lebenskonzept zu schaffen, das Wohnen, Arbeiten, Sport und kreative Freiräume
           miteinander verbindet. Wir möchten eine inspiriernde und produktive Atmosphäre für die Besucher und Bewohner
           bereitstellen, in welcher sie sich gerne aufhalten.</p>
-        <nuxt-img src='/PiktoModulareBauweise.svg' />
-        <nuxt-img src='/PiktoRöhreQuerschnitt.svg' />
       </div>
     </div>
+    <MarqueeLabel class='mt-8 -mb-20' :label='firstLabel'/>
+    <div class='container mx-auto px-4'>
+      <nuxt-img src='/PiktoModulareBauweise.svg'/>
+      <nuxt-img src='/MaßeRöhrePräsi_Webite.svg'/>
+    </div>
   </FadeInTransition>
-  <MarqueeLabel class='my-16' :label='firstLabel' />
-  <ImageCarousel />
-  <TabSection :tabs-nav-list='tabsNavList' title='Grundrisse' />
+  <ImageCarousel-2 :images="carouselImages"
+                   :autoplay="false"
+                   :interval="4000"/>
+  <TabSection :tabs-nav-list='tabsNavList' title='Grundrisse'/>
   <section>
     <FadeInTransition>
-      <nuxt-img src='/3D-Schnitt.jpg' class='w-full mt-10' />
+      <nuxt-img src='/3D-Schnitt.jpg' class='w-full mt-10'/>
     </FadeInTransition>
   </section>
-  <ImageSlider />
+  <ImageSlider/>
   <ImageCollage></ImageCollage>
-  <MarqueeLabel class='my-16' :label='secondLabel' />
-  <BackgroundImageSection />
-  <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert />
+  <MarqueeLabel class='my-16' :label='secondLabel'/>
+  <BackgroundImageSection/>
+  <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert/>
   <footer class='w-full flex align-center justify-center text-white text-xs bg-purple-dark sm:py-2'>
     <NuxtLink to='/impressum'>Impressum</NuxtLink>
   </footer>
 </template>
 <script lang='ts' setup>
 import MarqueeLabel from '~/components/MarqueeLabel.vue'
-import { ref, Ref } from 'vue'
-import type { TabNavItem } from '~/types/tab-nav-item'
+import {ref, Ref} from 'vue'
+import type {TabNavItem} from '~/types/tab-nav-item'
 import ImageSlider from '~/components/ImageSlider.vue'
 import Impressum from '~/pages/impressum.vue'
+
+// Bilder für das Carousel
+const carouselImages = ref([
+  '/ImageCarusel/Form 1 WEB.svg',
+  '/ImageCarusel/Form 2 WEB.svg',
+  '/ImageCarusel/Form 3 WEB.svg',
+  '/ImageCarusel/Form 4 WEB.svg',
+  '/ImageCarusel/Form 5 WEB.svg',
+  '/ImageCarusel/Form 6 WEB.svg',
+  '/ImageCarusel/Form 7 WEB.svg',
+  '/ImageCarusel/Form 8 WEB.svg',
+
+])
 
 const tabsNavList: Ref<TabNavItem[]> = ref([
   {
