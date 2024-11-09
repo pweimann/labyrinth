@@ -13,10 +13,9 @@
           innovatives und integriertes Lebenskonzept zu schaffen, das Wohnen, Arbeiten, Sport und kreative Freiräume
           miteinander verbindet. Wir möchten eine inspiriernde und produktive Atmosphäre für die Besucher und Bewohner
           bereitstellen, in welcher sie sich gerne aufhalten.</p>
-        <nuxt-img src='/Pikto Modulare Bauweise.svg' />
-        <nuxt-img src='/Pikto Röhre Querschnitt .svg' />
+        <nuxt-img src='/PiktoModulareBauweise.svg' />
+        <nuxt-img src='/PiktoRöhreQuerschnitt.svg' />
       </div>
-      <!-- TODO Teaser Renderings   -->
     </div>
   </FadeInTransition>
   <MarqueeLabel class='my-16' :label='firstLabel' />
@@ -39,7 +38,7 @@
 <script lang='ts' setup>
 import MarqueeLabel from '~/components/MarqueeLabel.vue'
 import { ref, Ref } from 'vue'
-import { TabNavItem } from '~/types/tab-nav-item'
+import type { TabNavItem } from '~/types/tab-nav-item'
 import ImageSlider from '~/components/ImageSlider.vue'
 import Impressum from '~/pages/impressum.vue'
 
