@@ -11,7 +11,7 @@
             lichtdurchflutete und grüne Insel als Zentrum der Gemeinschaft.</p>
         </div>
       </div>
-      <div class='bg-purple-dark collage-container mt-8 md:mt-16 px-4 w-full'>
+      <div class='bg-purple-dark collage-container mt-8 md:mt-16 px-4 w-full py-12'>
         <div class='collage-left-side'>
           <img src='/renderings/AnsichtEingang.svg' alt='Rendering 1'
                class='bg-white collage-left-side-item rounded-3xl object-cover collage-left-side-first'>
@@ -46,19 +46,19 @@
   }
 
   .collage-left-side {
-    margin-top: 0.825rem;
+    //margin-top: 2rem;
   }
 
   .collage-left-side-item-above {
-    margin-top: 0.825rem;
+    margin-top: 2rem;
   }
 
   .collage-right-side-item {
-    margin-top: 0.825rem;
+    margin-top: 2rem;
   }
 
   .collage-right-side-item-above {
-    margin-top: 0.825rem;
+    margin-top: 2rem;
   }
 }
 

@@ -34,20 +34,25 @@
   </FadeInTransition>
   <ImageCarousel-2
       class="mt-28"
-                    :images="carouselImages"
-                   :autoplay="false"
-                   :interval="4000"/>
+      :images="carouselImages"
+      :autoplay="false"
+      :interval="4000"/>
   <TabSection :tabs-nav-list='tabsNavList' title='Grundrisse'/>
-  <section>
-    <FadeInTransition>
-      <nuxt-img src='/3D-Schnitt.jpg' class='w-full mt-10'/>
-    </FadeInTransition>
-  </section>
-  <ImageSlider/>
+<!--  <FadeInTransition>-->
+<!--    <div class='container mx-auto md:px-4 mt-32'>-->
+<!--      <nuxt-img class="scale-250 md:scale-125" src='/PiktoIsometrie.svg'/>-->
+<!--    </div>-->
+<!--  </FadeInTransition>-->
+<!--  <section>-->
+<!--    <FadeInTransition>-->
+<!--      <nuxt-img src='/3D-Schnitt.jpg' class='w-full mt-10'/>-->
+<!--    </FadeInTransition>-->
+<!--  </section>-->
+<!--  <ImageSlider/>-->
   <ImageCollage></ImageCollage>
-  <MarqueeLabel class='my-16' :label='secondLabel'/>
-  <BackgroundImageSection/>
-  <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert/>
+<!--  <MarqueeLabel class='my-16' :label='secondLabel'/>-->
+<!--  <BackgroundImageSection/>-->
+<!--  <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert/>-->
   <footer class='w-full flex align-center justify-center text-white text-xs bg-purple-dark sm:py-2'>
     <NuxtLink to='/impressum'>Impressum</NuxtLink>
   </footer>
@@ -74,64 +79,71 @@ const carouselImages = ref([
 
 const tabsNavList: Ref<TabNavItem[]> = ref([
   {
-    title: 'Level 1',
+    title: 'Grundriss LV 1',
     imageSrc: '/tabs/GR 1.svg',
-    description: 'Ein integrierter Freizeitbereich, der sich auf Sport, Fitness und Entspannung konzentriert, ist ebenfalls ein wichtiger Bestandteil des Gebäudes. Zugleich bietet das Gebäude auch Raum für Entspannung und Yoga. Außerdem gibt es kreative Freiräume, in denen Bewohner und Be- sucher ihre Kreativität und ihr handwerkliches Können ausleben können. Diese Räume können für eine Vielzahl von Aktivitäten genutzt werden, von Kunst- bis hin zu DIY-Projekten.'
+    description: '<span class="font-bold">Urvertrauen vs. Urmisstrauen</span>\n' +
+        '\t(Säuglingsalter, 0-1 Jahr)\n' +
+        '<br> <br>'+
+        '\tAufgabe: Entwicklung von Vertrauen in die Umwelt und die Betreuungspersonen.'
   },
   {
-    title: 'Level 2',
+    title: 'Grundriss LV 2',
     imageSrc: '/tabs/GR 2.svg',
-    description: 'Die Arbeitsflächen sind individuell anpassbar und können für eine Vielzahl von Geschäftsbedürfnissen genutzt werden, von Co-Working-Räumen bis hin zu kleinen Büros und Atelierflächen.'
+    description: 'Autonomie vs. Scham + Zweifel \n' +
+        '\t(frühes Kleinkindalter, 1-3 Jahre)\n' +
+        '<br> <br>' +
+        '\tAufgabe: Erlernen von Autonomie und Selbstkontrolle, ohne Scham oder Zweifel an den eigenen Fähigkeiten zu entwickeln.'
   },
   {
-    title: 'Level 3',
+    title: 'Grundriss LV 3',
     imageSrc: '/tabs/GR 3.svg',
-    description: 'Jede Wohnung verfügt über eine offene und helle Grundfläche mit hohen Decken, um maximale Bewegungsfreiheit und Licht zu bieten. Zusätzlich bieten Balkone, Loggien und Auskragungen eine Erhöhung der Wohnqualität und ermöglichen eine nahtlose Verbindung vom Innen- und Außenraum.'
+    description: 'Initiative vs. \tSchuldgefühl\n' +
+        '\t (Kindergartenalter, 3-6 Jahre)\n' +
+        '<br> <br>' +
+        '\tAufgabe: Entwicklung von Initiative und Fähigkeit, Ziele zu setzen, ohne dabei ein übermäßiges Schuldgefühl zu empfinden.'
   },
   {
-    title: 'Level 4',
+    title: 'Grundriss LV 4',
     imageSrc: '/tabs/GR 4.svg',
-    description: 'Das lichtdurchflutete Atrium fungiert als grüne Lunge des Gebäudes. Als Zentrum dient es der Begegnung zwischen Besucher und Bewohner und lässt die verschiedenen Nutzungen innerhalb des Gebäudes miteinander verschmelzen. Die Treppe im Erdgeschoss lädt zum verweilen, beobachten und als Treffpunkt ein.'
+    description: 'Fleiß vs. Minderwertigkeitsgefühl\n' +
+        '\t(Grundschulalter, 6-12 Jahre)\n' +
+        '<br> <br>' +
+        '\tAufgabe: Entwicklung von Fähigkeiten und Kompetenzen, um ein Gefühl der Kompetenz und Fleiß zu fördern.'
   },
   {
-    title: 'Level 5',
+    title: 'Grundriss LV 5',
     imageSrc: '/tabs/GR 5.svg',
-    description: 'Durch eine Tiefgarage mit abgetrennten Car-Sharing Plätzen und integrierten E-Ladesäulen wird ein großer Beitrag zur Mobilitätswende geleistet. Der im Erdgeschoss verortete, abschließbare Fahrradraum mit Umkleiden und Duschen unterstützt die Wahl des Verkehrsmittels hin zum Fahrrad oder E-Bike und ermöglicht sichere und trockene Parkflächen hierfür. '
+    description: 'Identität vs. Identitätsdiffusion \n' +
+        '\t(Jugendalter, 12-18 Jahre)\n' +
+        '<br> <br>' +
+        '\tAufgabe: Herausforderung der Identitätsbildung und Integration verschiedener Rollen.'
   },
   {
-    title: 'Level 6',
+    title: 'Grundriss LV 6',
     imageSrc: '/tabs/GR 6.svg',
-    description: 'Durch eine Tiefgarage mit abgetrennten Car-Sharing Plätzen und integrierten E-Ladesäulen wird ein großer Beitrag zur Mobilitätswende geleistet. Der im Erdgeschoss verortete, abschließbare Fahrradraum mit Umkleiden und Duschen unterstützt die Wahl des Verkehrsmittels hin zum Fahrrad oder E-Bike und ermöglicht sichere und trockene Parkflächen hierfür. '
+    description: 'Intimität vs. Isolation \n' +
+        '\t(frühes Erwachsenenalter, 18-40 Jahre)\n' +
+        '<br> <br>' +
+        '\tAufgabe: Aufbau intimer Beziehungen und Bindungen zu anderen Menschen.'
   },
   {
-    title: 'Level 7',
+    title: 'Grundriss LV 7',
     imageSrc: '/tabs/GR 7.svg',
-    description: 'Durch eine Tiefgarage mit abgetrennten Car-Sharing Plätzen und integrierten E-Ladesäulen wird ein großer Beitrag zur Mobilitätswende geleistet. Der im Erdgeschoss verortete, abschließbare Fahrradraum mit Umkleiden und Duschen unterstützt die Wahl des Verkehrsmittels hin zum Fahrrad oder E-Bike und ermöglicht sichere und trockene Parkflächen hierfür. '
+    description: 'Generativität vs. Stagnation \n' +
+        '\t(mittleres Erwachsenenalter, 40-65 Jahre)\n' +
+        '<br> <br>' +
+        '\tAufgabe: Beitrag zur Gesellschaft und Schaffung von etwas, das über die eigene Person hinausgeht.'
   },
   {
-    title: 'Level 8',
+    title: 'Grundriss LV 8',
     imageSrc: '/tabs/GR 8.svg',
-    description: 'Durch eine Tiefgarage mit abgetrennten Car-Sharing Plätzen und integrierten E-Ladesäulen wird ein großer Beitrag zur Mobilitätswende geleistet. Der im Erdgeschoss verortete, abschließbare Fahrradraum mit Umkleiden und Duschen unterstützt die Wahl des Verkehrsmittels hin zum Fahrrad oder E-Bike und ermöglicht sichere und trockene Parkflächen hierfür. '
+    description: 'Ich-Integrität vs. Verzweiflung \n' +
+        '\t(spätes Erwachsenenalter, 65+ Jahre)\n' +
+        '<br> <br>' +
+        '\tAufgabe: Akzeptanz des eigenen Lebens und der eigenen Erfahrungen, ohne Verzweiflung über verpasste Chancen.'
   }
 ])
 
-const saveOurPlanetList: Ref<TabNavItem[]> = ref([
-  {
-    title: 'Save',
-    imageSrc: '/tabs/Recycle.png',
-    description: ''
-  },
-  {
-    title: 'Our',
-    imageSrc: '/tabs/ReUse.png',
-    description: ''
-  },
-  {
-    title: 'Planet',
-    imageSrc: '/tabs/Reduce_neu.png',
-    description: ''
-  }
-])
 
 const firstLabel = 'find the <strong>exit</strong> +++ one earth - one labryrinth +++&nbsp;\n'
 const secondLabel = 'wer das liest <strong>bleibt</strong> +++ dumm +++&nbsp;\n'

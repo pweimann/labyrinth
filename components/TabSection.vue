@@ -18,10 +18,11 @@
                 <span v-show='!isActiveItem(navItem)' class='inline-block mr-2'>+</span>
                 <div class='tabs-nav-item-title inline-block'>{{ navItem.title }}</div>
               </div>
-              <p class='text-1xl text-justify leading-normal mb-4'
+              <p class='text-1xl text-justify leading-normal mb-4 text-left'
                  v-show='checkVisibilitOfParagraph(navItem)'
-                 :class='invert ? "text-white" : "text-purple-dark"'>
-                {{ navItem.description }}</p>
+                 :class='invert ? "text-white" : "text-purple-dark"'
+                 v-html="activeNavItem?.description"
+              ></p>
             </li>
           </ul>
         </div>
@@ -29,9 +30,8 @@
           <img class="scale" :src='activeNavItem.imageSrc'>
         </div>
         <div class='container px-4 text-center md:hidden'>
-          <p class='text-1xl leading-normal mb-4'
-             :class='invert ? "text-white" : "text-purple-dark"'>
-            {{ activeNavItem.description }}</p>
+          <p class='text-1xl leading-normal mb-4 text-left'
+               :class='invert ? "text-white" : "text-purple-dark"' v-html="activeNavItem?.description"></p>
         </div>
       </div>
     </FadeInTransition>
