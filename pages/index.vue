@@ -1,115 +1,106 @@
 <template>
-  <section>
-    <div class='hero-placeholder sm:text-1xl'>
-      <h1>Hello stranger, scroll down</h1>
-    </div>
-  </section>
-  <FadeInTransition>
-    <div class='container mx-auto md:px-4'>
-      <div class='md:w-3/4 mx-auto text-center'>
-        <h2 class='text-purple-dark text-4xl md:text-5xl font-bold uppercase leading-tight mb-6'>Labyrinth</h2>
-        <p class='text-purple-dark text-md md:text-xl leading-normal'>Der Entwurf des Labyrinths vereint Architektur,
-          Kunst, Emotionen und Technologie. Es entsteht nicht nur ein physischer Raum, sondern ein Erlebnis, das die
-          Wahrnehmung und Interaktion der Nutzer auf völlig neue Weise fordert und erweitert. Durch die Integration
-          moderner Medien erlangt es eine neue Dimension als dynamischer, interaktiver Raum und die Grenzen zwischen
-          Realität und Virtualität verschwimmen auf spannende Weise.</p>
+  <div class="overflow-x-hidden w-full">
+    <section>
+      <div class='hero-placeholder sm:text-1xl'>
+        <h1>Hello stranger, scroll down</h1>
       </div>
-    </div>
-    <MarqueeLabel class='mt-8 -mb-10' :label='firstLabel'/>
-  </FadeInTransition>
-  <FadeInTransition>
-    <div class='container mx-auto md:px-4 mt-20'>
-      <nuxt-img class="mb-16 w-full" src='/ModuleRöhre.png'/>
-    </div>
-  </FadeInTransition>
-  <FadeInTransition>
-    <div class='container mx-auto md:px-4'>
-      <nuxt-img class="scale-150 md:scale-100 mb-28" src='/MaßeRöhrePräsi_Webite.svg'/>
-    </div>
-  </FadeInTransition>
-  <FadeInTransition>
-    <div class='container mx-auto md:px-4'>
-      <nuxt-img class="scale-175 md:scale-100" src='/CollageMaterial.png'/>
-    </div>
-  </FadeInTransition>
-  <ImageCarousel-2
-      class="mt-28"
-      :images="carouselImages"
-      :autoplay="false"
-      :interval="4000"/>
-  <TabSection :tabs-nav-list='tabsNavList' title='Grundrisse'/>
-  <!--  <FadeInTransition>-->
-  <!--    <div class='container mx-auto md:px-4 mt-32'>-->
-  <!--      <nuxt-img class="scale-250 md:scale-125" src='/PiktoIsometrie.svg'/>-->
-  <!--    </div>-->
-  <!--  </FadeInTransition>-->
-  <!--  <section>-->
-  <!--    <FadeInTransition>-->
-  <!--      <nuxt-img src='/3D-Schnitt.jpg' class='w-full mt-10'/>-->
-  <!--    </FadeInTransition>-->
-  <!--  </section>-->
-  <!--  <ImageSlider/>-->
-  <ImageCollage
-      title="VERTICAL ABODE"
-      subtitle="ist zeitlos und warm"
-      description="Das vertical Village ist modern und konzentriert sich auf den Nutzen des Raumes. Es schafft eine vertikale Gemeinschaft in einem dichter besiedelten Bereich in Berlin Kreuzberg. Das zentrale Atrium kreiert eine offene, lichtdurchflutete und grüne Insel als Zentrum der Gemeinschaft."
-      :images="[
-      {
-        src: '/renderings/AnsichtEingang.svg',
-        alt: 'Rendering 1'
-      },
-      {
-        src: '/renderings/SchnittA-A.svg',
-        alt: 'Rendering 2'
-      },
-      {
-        src: '/renderings/SchnittB-B.svg',
-        alt: 'Rendering 3'
-      }
-    ]"
-  />
-  <ImageCollage
-      title="VERTICAL ABODE"
-      subtitle="ist zeitlos und warm"
-      description="Das vertical Village ist modern und konzentriert sich auf den Nutzen des Raumes. Es schafft eine vertikale Gemeinschaft in einem dichter besiedelten Bereich in Berlin Kreuzberg. Das zentrale Atrium kreiert eine offene, lichtdurchflutete und grüne Insel als Zentrum der Gemeinschaft."
-      :images="[
-      {
-        src: '/collage/Collage LV 1 ohne Hintergrund.png',
-        alt: 'Rendering 1'
-      },
-      {
-        src: '/collage/Collage LV 2 ohne Hintergrund.png',
-        alt: 'Rendering 2'
-      },
-      {
-        src: '/collage/Collage LV 3 ohne Hintergrund.png',
-        alt: 'Rendering 3'
-      },
-      {
-        src: '/collage/Collage LV 4 ohne Hintergrund.png',
-        alt: 'Rendering 4'
-      },
-      {
-        src: '/collage/Collage LV 5 ohne Hintergrund.png',
-        alt: 'Rendering 5'
-      },
-      {
-        src: '/collage/Collage LV 6 ohne Hintergrund.png',
-        alt: 'Rendering 6'
-      },
-      {
-        src: '/collage/Collage LV 7 ohne Hintergrund.png',
-        alt: 'Rendering 7'
-      },
-      {
-        src: '/collage/Collage LV 8 ohne Hintergrund.png',
-        alt: 'Rendering 8'
-      }
-    ]"
-  />
-  <footer class='w-full flex align-center justify-center text-white text-xs bg-purple-dark sm:py-2'>
-    <NuxtLink to='/impressum'>Impressum</NuxtLink>
-  </footer>
+    </section>
+    <FadeInTransition>
+      <div class='container mx-auto md:px-4'>
+        <div class='md:w-3/4 mx-auto text-center'>
+          <h2 class='text-purple-dark text-4xl md:text-5xl font-bold uppercase leading-tight mb-6'>Labyrinth</h2>
+          <p class='text-purple-dark text-md md:text-xl leading-normal'>Der Entwurf des Labyrinths vereint Architektur,
+            Kunst, Emotionen und Technologie. Es entsteht nicht nur ein physischer Raum, sondern ein Erlebnis, das die
+            Wahrnehmung und Interaktion der Nutzer auf völlig neue Weise fordert und erweitert. Durch die Integration
+            moderner Medien erlangt es eine neue Dimension als dynamischer, interaktiver Raum und die Grenzen zwischen
+            Realität und Virtualität verschwimmen auf spannende Weise.</p>
+        </div>
+      </div>
+      <MarqueeLabel class='mt-8 -mb-10' :label='firstLabel'/>
+    </FadeInTransition>
+    <FadeInTransition>
+      <div class='container mx-auto md:px-4 mt-20'>
+        <nuxt-img class="mb-16 w-full" src='/ModuleRöhre.png'/>
+      </div>
+    </FadeInTransition>
+    <FadeInTransition>
+      <div class='container mx-auto md:px-4'>
+        <nuxt-img class="scale-150 md:scale-100 mb-28" src='/MaßeRöhrePräsi_Webite.svg'/>
+      </div>
+    </FadeInTransition>
+    <FadeInTransition>
+      <div class='container mx-auto md:px-4'>
+        <nuxt-img class="scale-175 md:scale-100" src='/CollageMaterial.png'/>
+      </div>
+    </FadeInTransition>
+    <ImageCarousel-2
+        class="mt-28"
+        :images="carouselImages"
+        :autoplay="false"
+        :interval="4000"/>
+    <TabSection :tabs-nav-list='tabsNavList' title='Grundrisse'/>
+    <ImageCollage
+        title="VERTICAL ABODE"
+        subtitle="ist zeitlos und warm"
+        description="Das vertical Village ist modern und konzentriert sich auf den Nutzen des Raumes. Es schafft eine vertikale Gemeinschaft in einem dichter besiedelten Bereich in Berlin Kreuzberg. Das zentrale Atrium kreiert eine offene, lichtdurchflutete und grüne Insel als Zentrum der Gemeinschaft."
+        :images="[
+          {
+            src: '/renderings/AnsichtEingang.svg',
+            alt: 'Rendering 1'
+          },
+          {
+            src: '/renderings/SchnittA-A.svg',
+            alt: 'Rendering 2'
+          },
+          {
+            src: '/renderings/SchnittB-B.svg',
+            alt: 'Rendering 3'
+          }
+        ]"
+    />
+    <ImageCollage
+        title="VERTICAL ABODE"
+        subtitle="ist zeitlos und warm"
+        description="Das vertical Village ist modern und konzentriert sich auf den Nutzen des Raumes. Es schafft eine vertikale Gemeinschaft in einem dichter besiedelten Bereich in Berlin Kreuzberg. Das zentrale Atrium kreiert eine offene, lichtdurchflutete und grüne Insel als Zentrum der Gemeinschaft."
+        :images="[
+          {
+            src: '/collage/Collage LV 1 ohne Hintergrund.png',
+            alt: 'Rendering 1'
+          },
+          {
+            src: '/collage/Collage LV 2 ohne Hintergrund.png',
+            alt: 'Rendering 2'
+          },
+          {
+            src: '/collage/Collage LV 3 ohne Hintergrund.png',
+            alt: 'Rendering 3'
+          },
+          {
+            src: '/collage/Collage LV 4 ohne Hintergrund.png',
+            alt: 'Rendering 4'
+          },
+          {
+            src: '/collage/Collage LV 5 ohne Hintergrund.png',
+            alt: 'Rendering 5'
+          },
+          {
+            src: '/collage/Collage LV 6 ohne Hintergrund.png',
+            alt: 'Rendering 6'
+          },
+          {
+            src: '/collage/Collage LV 7 ohne Hintergrund.png',
+            alt: 'Rendering 7'
+          },
+          {
+            src: '/collage/Collage LV 8 ohne Hintergrund.png',
+            alt: 'Rendering 8'
+          }
+        ]"
+    />
+    <footer class='w-full flex align-center justify-center text-white text-xs bg-purple-dark sm:py-2'>
+      <NuxtLink to='/impressum'>Impressum</NuxtLink>
+    </footer>
+  </div>
 </template>
 <script lang='ts' setup>
 import MarqueeLabel from '~/components/MarqueeLabel.vue'
