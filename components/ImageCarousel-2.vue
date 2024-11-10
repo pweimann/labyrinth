@@ -16,7 +16,7 @@
         <img
             :src="image"
             :alt="`Slide ${index + 1}`"
-            class="w-full h-full scale-225"
+            class="w-full h-full scale-200 md:scale-225"
         />
       </div>
     </div>
@@ -76,7 +76,7 @@ const props = defineProps({
   },
   height: {
     type: [String, Number],
-    default: '600px' // Reduzierte Standardhöhe
+    default: '500px' // Reduzierte Standardhöhe
   }
 })
 
