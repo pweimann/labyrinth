@@ -27,7 +27,7 @@
           </ul>
         </div>
         <div class='tabs-content md:w-2/3'>
-          <img class="scale-175 md:scale-300" :src='activeNavItem.imageSrc'>
+          <img class="md:scale-300" :src='activeNavItem.imageSrc'>
         </div>
         <div class='container px-4 text-center md:hidden'>
           <p class='text-1xl leading-normal mb-4 text-left'
