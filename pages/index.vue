@@ -63,6 +63,11 @@
         <nuxt-img src='/Pikto Iso A4.svg'/>
       </div>
     </FadeInTransition>
+    <FadeInTransition>
+      <div class='container mx-auto md:px-4'>
+        <nuxt-img src='/ISO vollständig.svg'/>
+      </div>
+    </FadeInTransition>
     <ImageCollage
         title="VERTICAL ABODE"
         subtitle="ist zeitlos und warm"
