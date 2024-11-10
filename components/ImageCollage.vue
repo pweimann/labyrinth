@@ -1,13 +1,13 @@
 <template>
   <section class='bg-white py-10 md:py-16' ref='main'>
-    <FadeInTransition>
-      <div class='container mx-auto px-4'>
-        <div class='w-3/4 mx-auto text-center'>
-          <h2 class='text-purple-dark text-3xl md:text-5xl font-bold uppercase leading-tight mb-4'>{{ title }}</h2>
-          <p class='text-purple-dark text-2xl md:text-3xl leading-normal mb-4'>{{ subtitle }}</p>
-          <p class='text-purple-dark text-sm md:text-1xl leading-normal mb-4'>{{ description }}</p>
-        </div>
+    <div class='container mx-auto'>
+      <div class='mx-auto text-center'>
+        <h2 class='text-purple-dark text-4xl md:text-5xl font-bold uppercase leading-tight mb-6' v-if="title">{{ title }}</h2>
+        <p class='text-purple-dark text-2xl md:text-3xl leading-normal mb-4' v-if="subtitle">{{ subtitle }}</p>
+        <p class='text-purple-dark text-md md:text-xl leading-normal'>{{ description }}</p>
       </div>
+    </div>
+    <FadeInTransition>
       <div class='bg-purple-dark collage-container mt-8 md:mt-16 px-4 w-full py-12 md:py-6'>
         <!-- Erste Reihe -->
         <div class='collage-row'>
@@ -52,10 +52,10 @@ interface ImageInfo {
 }
 
 interface Props {
-  title: string;
-  subtitle: string;
+  title?: string;
+  subtitle?: string;
   description: string;
-  images: ImageInfo[]; // Jetzt nur ein Array für alle Bilder
+  images: ImageInfo[];
 }
 
 const props = defineProps<Props>();
@@ -69,7 +69,7 @@ const props = defineProps<Props>();
     gap: 4rem;
   }
 
-  .collage-row {
+.collage-row {
     display: flex;
     flex-direction: column;
   }

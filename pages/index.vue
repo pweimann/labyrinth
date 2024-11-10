@@ -40,9 +40,8 @@
         :interval="4000"/>
     <TabSection :tabs-nav-list='tabsNavList' title='Grundrisse'/>
     <ImageCollage
-        title="VERTICAL ABODE"
-        subtitle="ist zeitlos und warm"
-        description="Das vertical Village ist modern und konzentriert sich auf den Nutzen des Raumes. Es schafft eine vertikale Gemeinschaft in einem dichter besiedelten Bereich in Berlin Kreuzberg. Das zentrale Atrium kreiert eine offene, lichtdurchflutete und grüne Insel als Zentrum der Gemeinschaft."
+        title="TODO"
+        description="Die Durchwegung des Labyrinths führt die Besucher durch acht Ebenen, die jeweils einer Phase der psychosozialen Entwicklung nach Erik H. Erikson entsprechen. Jede Ebene symbolisiert eine spezifische Herausforderung, von Urvertrauen in der ersten Ebene bis zur Ich-Integrität in der letzten. Die Besucher bewegen sich dabei durch verschiedene räumliche Sequenzen, die bewusst so gestaltet sind, dass sie unterschiedliche Emotionen hervorrufen, wie etwa Neugier, Unsicherheit oder Erleichterung. Diese räumliche und emotionale Reise erfordert ständige Entscheidungen und Reflexion, wodurch das Labyrinth auch zu einer metaphorischen Selbsterfahrung wird."
         :images="[
           {
             src: '/renderings/SchnittA-A.svg',
@@ -68,11 +67,10 @@
         <nuxt-img src='/ISO vollständig.svg'/>
       </div>
     </FadeInTransition>
-    <MarqueeLabel class='mt-8 -mb-10' :label='firstLabel'/>
+    <MarqueeLabel class='mt-8' :label='firstLabel'/>
     <ImageCollage
-        title="VERTICAL ABODE"
-        subtitle="ist zeitlos und warm"
-        description="Das vertical Village ist modern und konzentriert sich auf den Nutzen des Raumes. Es schafft eine vertikale Gemeinschaft in einem dichter besiedelten Bereich in Berlin Kreuzberg. Das zentrale Atrium kreiert eine offene, lichtdurchflutete und grüne Insel als Zentrum der Gemeinschaft."
+        title="TODO"
+        description="TODOODODO"
         :images="[
           {
             src: '/collage/Collage LV 1 ohne Hintergrund.png',
