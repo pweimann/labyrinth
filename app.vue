@@ -1,7 +1,7 @@
 <template>
   <div>
-<!--    <LoadingScreen v-if="!entered" @enter="entered = true" />-->
-    <LoadingScreen v-if="false" @enter="entered = true" />
+    <LoadingScreen v-if="!entered" @enter="entered = true" />
+<!--    <LoadingScreen v-if="false" @enter="entered = true" />-->
     <template v-else>
       <header>
         <!-- Header content goes here -->
