@@ -26,8 +26,8 @@
             </li>
           </ul>
         </div>
-        <div class='tabs-content md:w-2/3 py-12 md:py-0'>
-          <img class="scale" :src='activeNavItem.imageSrc'>
+        <div class='tabs-content md:w-2/3'>
+          <img class="scale-175 md:scale-300" :src='activeNavItem.imageSrc'>
         </div>
         <div class='container px-4 text-center md:hidden'>
           <p class='text-1xl leading-normal mb-4 text-left'
@@ -39,7 +39,7 @@
 </template>
 
 <script setup lang='ts'>
-import { ref, Ref, defineProps, computed } from 'vue'
+import { ref, Ref, defineProps } from 'vue'
 import { TabNavItem } from '~/types/tab-nav-item'
 
 const props = defineProps<{
@@ -70,9 +70,6 @@ const checkVisibilitOfParagraph = (item: TabNavItem) => {
   .tabs-wrapper {
     display: flex;
     flex-direction: column;
-  }
-  .scale {
-    transform: scale(2.5);
   }
 }
 
