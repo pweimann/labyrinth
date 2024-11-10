@@ -1,9 +1,11 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
+//@ts-ignore
+import tw_elements from "tw-elements/dist/plugin";
 
 export default <Partial<Config>>{
   content: ['./src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js'],
   plugins: [
-    require('tw-elements/dist/plugin')
+    tw_elements
   ],
   theme: {
     extend: {
