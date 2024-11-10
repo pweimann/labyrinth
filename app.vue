@@ -9,8 +9,8 @@
       <main>
         <NuxtPage></NuxtPage>
       </main>
-      <footer>
-        <!-- Footer content goes here -->
+      <footer class='w-full flex align-center justify-center text-white text-xs bg-purple-dark sm:py-2'>
+        <NuxtLink to='/impressum'>Impressum</NuxtLink>
       </footer>
     </template>
   </div>
