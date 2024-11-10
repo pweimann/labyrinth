@@ -6,7 +6,7 @@
       :style="{ height: carouselHeight }"
   >
     <!-- Carousel Container -->
-    <div ref="carouselContainer" class="relative w-full h-full flex items-center justify-center mb-10">
+    <div ref="carouselContainer" class="relative w-full h-full flex items-center justify-center -mt-12 ">
       <div
           v-for="(image, index) in images"
           :key="index"
