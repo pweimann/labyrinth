@@ -67,7 +67,7 @@
         <nuxt-img src='/ISO vollständig.svg'/>
       </div>
     </FadeInTransition>
-    <MarqueeLabel class='mt-8' :label='firstLabel'/>
+    <MarqueeLabel class='mt-8' :label='secondLabel'/>
     <ImageCollage
         title="TODO"
         description="TODOODODO"
@@ -196,8 +196,8 @@ const tabsNavList: Ref<TabNavItem[]> = ref([
 ])
 
 
-const firstLabel = 'find the <strong>exit</strong> +++ one earth - one labryrinth +++&nbsp;\n'
-const secondLabel = 'wer das liest <strong>bleibt</strong> +++ dumm +++&nbsp;\n'
+const firstLabel = '+++ Der Weg ist das Ziel +++ &nbsp;\n'
+const secondLabel = '+++ Raum und Reflexion +++ Realität und Vision +++&nbsp;\n'
 </script>
 <style lang='css'>
 .hero-placeholder {
