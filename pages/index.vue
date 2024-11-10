@@ -18,8 +18,8 @@
     <MarqueeLabel class='mt-8 -mb-10' :label='firstLabel'/>
   </FadeInTransition>
   <FadeInTransition>
-    <div class='container mx-auto md:px-4'>
-      <nuxt-img class="scale-125 mb-16" src='/PiktoModulareBauweise.svg'/>
+    <div class='container mx-auto md:px-4 mt-20'>
+      <nuxt-img class="mb-16" src='/ModuleRöhre.png'/>
     </div>
   </FadeInTransition>
   <FadeInTransition>
