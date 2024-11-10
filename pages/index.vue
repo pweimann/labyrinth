@@ -19,7 +19,7 @@
   </FadeInTransition>
   <FadeInTransition>
     <div class='container mx-auto md:px-4 mt-20'>
-      <nuxt-img class="mb-16" src='/ModuleRöhre.png'/>
+      <nuxt-img class="mb-16 w-full" src='/ModuleRöhre.png'/>
     </div>
   </FadeInTransition>
   <FadeInTransition>
