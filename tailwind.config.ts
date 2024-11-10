@@ -9,6 +9,13 @@ export default <Partial<Config>>{
   ],
   theme: {
     extend: {
+      scale: {
+        '175': '1.75',
+        '200': '2',
+        '225': '2.25',
+        '250': '2.5',
+        '300': '3',
+      },
       colors: {
         'purple-dark': '#382f73',
         'black-light': '#00010f',

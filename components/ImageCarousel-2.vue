@@ -6,7 +6,7 @@
       :style="{ height: carouselHeight }"
   >
     <!-- Carousel Container -->
-    <div ref="carouselContainer" class="relative w-full h-full flex items-center justify-center">
+    <div ref="carouselContainer" class="relative w-full h-full flex items-center justify-center mb-10">
       <div
           v-for="(image, index) in images"
           :key="index"
@@ -16,16 +16,16 @@
         <img
             :src="image"
             :alt="`Slide ${index + 1}`"
-            class="w-full h-full object-contain"
+            class="w-full h-full scale-225"
         />
       </div>
     </div>
 
     <!-- Navigation Buttons -->
-    <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-20"> <!-- Erhöhter gap-Wert -->
+    <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-32"> <!-- Erhöhter gap-Wert -->
       <button
           @click="prevSlide"
-          class="p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors w-10 h-10 flex items-center justify-center"
+          class="p-2 bg-purple-light/50 text-purple-dark rounded-full hover:bg-purple-light/70 transition-colors w-10 h-10 flex items-center justify-center"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -33,7 +33,7 @@
       </button>
       <button
           @click="nextSlide"
-          class="p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors w-10 h-10 flex items-center justify-center"
+          class="p-2 bg-purple-light/50 text-purple-dark rounded-full hover:bg-purple-light/70 transition-colors w-10 h-10 flex items-center justify-center"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -49,7 +49,7 @@
           @click="goToSlide(index)"
           :class="[
           'w-3 h-3 rounded-full transition-colors',
-          currentIndex === index ? 'bg-black' : 'bg-black/50 hover:bg-black/70'
+          currentIndex === index ? 'bg-purple-dark' : 'bg-purple-light/50 hover:bg-purple-light/70'
         ]"
       />
     </div>
@@ -76,11 +76,7 @@ const props = defineProps({
   },
   height: {
     type: [String, Number],
-    default: '400px' // Reduzierte Standardhöhe
-  },
-  imageSize: {
-    type: [String, Number],
-    default: '256' // Größe der SVGs in Pixeln
+    default: '600px' // Reduzierte Standardhöhe
   }
 })
 

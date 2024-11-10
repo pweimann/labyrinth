@@ -5,23 +5,36 @@
     </div>
   </section>
   <FadeInTransition>
-    <div class='container mx-auto px-4'>
-      <div class='w-3/4 mx-auto text-center'>
-        <h2 class='text-purple-dark text-2xl md:text-5xl font-bold uppercase leading-tight mb-6'>Labyrinth</h2>
-        <p class='text-purple-dark text-md md:text-xl leading-normal'>Unsere Vision für das
-          Neubauprojekt in Berlin-Kreuzberg ist es, ein
-          innovatives und integriertes Lebenskonzept zu schaffen, das Wohnen, Arbeiten, Sport und kreative Freiräume
-          miteinander verbindet. Wir möchten eine inspiriernde und produktive Atmosphäre für die Besucher und Bewohner
-          bereitstellen, in welcher sie sich gerne aufhalten.</p>
+    <div class='container mx-auto md:px-4'>
+      <div class='md:w-3/4 mx-auto text-center'>
+        <h2 class='text-purple-dark text-4xl md:text-5xl font-bold uppercase leading-tight mb-6'>Labyrinth</h2>
+        <p class='text-purple-dark text-md md:text-xl leading-normal'>Der Entwurf des Labyrinths vereint Architektur,
+          Kunst, Emotionen und Technologie. Es entsteht nicht nur ein physischer Raum, sondern ein Erlebnis, das die
+          Wahrnehmung und Interaktion der Nutzer auf völlig neue Weise fordert und erweitert. Durch die Integration
+          moderner Medien erlangt es eine neue Dimension als dynamischer, interaktiver Raum und die Grenzen zwischen
+          Realität und Virtualität verschwimmen auf spannende Weise.</p>
       </div>
     </div>
-    <MarqueeLabel class='mt-8 -mb-20' :label='firstLabel'/>
-    <div class='container mx-auto px-4'>
-      <nuxt-img src='/PiktoModulareBauweise.svg'/>
-      <nuxt-img src='/MaßeRöhrePräsi_Webite.svg'/>
+    <MarqueeLabel class='mt-8 -mb-10' :label='firstLabel'/>
+  </FadeInTransition>
+  <FadeInTransition>
+    <div class='container mx-auto md:px-4'>
+      <nuxt-img class="scale-125 mb-16" src='/PiktoModulareBauweise.svg'/>
     </div>
   </FadeInTransition>
-  <ImageCarousel-2 :images="carouselImages"
+  <FadeInTransition>
+    <div class='container mx-auto md:px-4'>
+      <nuxt-img class="scale-150 md:scale-100 mb-28" src='/MaßeRöhrePräsi_Webite.svg'/>
+    </div>
+  </FadeInTransition>
+  <FadeInTransition>
+    <div class='container mx-auto md:px-4'>
+      <nuxt-img class="scale-175 md:scale-100" src='/CollageMaterial.png'/>
+    </div>
+  </FadeInTransition>
+  <ImageCarousel-2
+      class="mt-28"
+                    :images="carouselImages"
                    :autoplay="false"
                    :interval="4000"/>
   <TabSection :tabs-nav-list='tabsNavList' title='Grundrisse'/>
