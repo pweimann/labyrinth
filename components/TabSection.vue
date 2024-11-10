@@ -26,7 +26,7 @@
             </li>
           </ul>
         </div>
-        <div class='tabs-content full-width md:w-2/3'>
+        <div class='tabs-content md:w-2/3 py-12 md:py-0'>
           <img class="scale" :src='activeNavItem.imageSrc'>
         </div>
         <div class='container px-4 text-center md:hidden'>
