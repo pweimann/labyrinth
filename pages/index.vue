@@ -45,17 +45,17 @@
         description="Das vertical Village ist modern und konzentriert sich auf den Nutzen des Raumes. Es schafft eine vertikale Gemeinschaft in einem dichter besiedelten Bereich in Berlin Kreuzberg. Das zentrale Atrium kreiert eine offene, lichtdurchflutete und grüne Insel als Zentrum der Gemeinschaft."
         :images="[
           {
-            src: '/renderings/AnsichtEingang.svg',
-            alt: 'Rendering 1'
-          },
-          {
             src: '/renderings/SchnittA-A.svg',
             alt: 'Rendering 2'
           },
           {
             src: '/renderings/SchnittB-B.svg',
             alt: 'Rendering 3'
-          }
+          },
+          {
+            src: '/renderings/AnsichtEingang.svg',
+            alt: 'Rendering 1'
+          },
         ]"
     />
     <FadeInTransition>
@@ -68,6 +68,7 @@
         <nuxt-img src='/ISO vollständig.svg'/>
       </div>
     </FadeInTransition>
+    <MarqueeLabel class='mt-8 -mb-10' :label='firstLabel'/>
     <ImageCollage
         title="VERTICAL ABODE"
         subtitle="ist zeitlos und warm"
