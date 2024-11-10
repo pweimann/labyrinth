@@ -2,7 +2,7 @@
   <div class="overflow-x-hidden w-full">
     <section>
       <div class='hero-placeholder sm:text-1xl'>
-        <h1>Hello stranger, scroll down</h1>
+        <h1>Hello Stranger, scroll down</h1>
       </div>
     </section>
     <FadeInTransition>
@@ -58,6 +58,11 @@
           }
         ]"
     />
+    <FadeInTransition>
+      <div class='container mx-auto md:px-4'>
+        <nuxt-img src='/Pikto Iso A4.svg'/>
+      </div>
+    </FadeInTransition>
     <ImageCollage
         title="VERTICAL ABODE"
         subtitle="ist zeitlos und warm"
