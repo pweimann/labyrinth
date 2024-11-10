@@ -1,4 +1,43 @@
 <template>
+  <ImageCollage
+      title="VERTICAL ABODE"
+      subtitle="ist zeitlos und warm"
+      description="Das vertical Village ist modern und konzentriert sich auf den Nutzen des Raumes. Es schafft eine vertikale Gemeinschaft in einem dichter besiedelten Bereich in Berlin Kreuzberg. Das zentrale Atrium kreiert eine offene, lichtdurchflutete und grüne Insel als Zentrum der Gemeinschaft."
+      :images="[
+      {
+        src: '/collage/Collage LV 1 ohne Hintergrund.png',
+        alt: 'Rendering 1'
+      },
+      {
+        src: '/collage/Collage LV 2 ohne Hintergrund.png',
+        alt: 'Rendering 2'
+      },
+      {
+        src: '/collage/Collage LV 3 ohne Hintergrund.png',
+        alt: 'Rendering 3'
+      },
+      {
+        src: '/collage/Collage LV 4 ohne Hintergrund.png',
+        alt: 'Rendering 4'
+      },
+      {
+        src: '/collage/Collage LV 5 ohne Hintergrund.png',
+        alt: 'Rendering 5'
+      },
+      {
+        src: '/collage/Collage LV 6 ohne Hintergrund.png',
+        alt: 'Rendering 6'
+      },
+      {
+        src: '/collage/Collage LV 7 ohne Hintergrund.png',
+        alt: 'Rendering 7'
+      },
+      {
+        src: '/collage/Collage LV 8 ohne Hintergrund.png',
+        alt: 'Rendering 8'
+      }
+    ]"
+  />
   <section>
     <div class='hero-placeholder sm:text-1xl'>
       <h1>Hello stranger, scroll down</h1>
@@ -38,21 +77,39 @@
       :autoplay="false"
       :interval="4000"/>
   <TabSection :tabs-nav-list='tabsNavList' title='Grundrisse'/>
-<!--  <FadeInTransition>-->
-<!--    <div class='container mx-auto md:px-4 mt-32'>-->
-<!--      <nuxt-img class="scale-250 md:scale-125" src='/PiktoIsometrie.svg'/>-->
-<!--    </div>-->
-<!--  </FadeInTransition>-->
-<!--  <section>-->
-<!--    <FadeInTransition>-->
-<!--      <nuxt-img src='/3D-Schnitt.jpg' class='w-full mt-10'/>-->
-<!--    </FadeInTransition>-->
-<!--  </section>-->
-<!--  <ImageSlider/>-->
-  <ImageCollage></ImageCollage>
-<!--  <MarqueeLabel class='my-16' :label='secondLabel'/>-->
-<!--  <BackgroundImageSection/>-->
-<!--  <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert/>-->
+  <!--  <FadeInTransition>-->
+  <!--    <div class='container mx-auto md:px-4 mt-32'>-->
+  <!--      <nuxt-img class="scale-250 md:scale-125" src='/PiktoIsometrie.svg'/>-->
+  <!--    </div>-->
+  <!--  </FadeInTransition>-->
+  <!--  <section>-->
+  <!--    <FadeInTransition>-->
+  <!--      <nuxt-img src='/3D-Schnitt.jpg' class='w-full mt-10'/>-->
+  <!--    </FadeInTransition>-->
+  <!--  </section>-->
+  <!--  <ImageSlider/>-->
+  <ImageCollage
+      title="VERTICAL ABODE"
+      subtitle="ist zeitlos und warm"
+      description="Das vertical Village ist modern und konzentriert sich auf den Nutzen des Raumes. Es schafft eine vertikale Gemeinschaft in einem dichter besiedelten Bereich in Berlin Kreuzberg. Das zentrale Atrium kreiert eine offene, lichtdurchflutete und grüne Insel als Zentrum der Gemeinschaft."
+      :images="[
+      {
+        src: '/renderings/AnsichtEingang.svg',
+        alt: 'Rendering 1'
+      },
+      {
+        src: '/renderings/SchnittA-A.svg',
+        alt: 'Rendering 2'
+      },
+      {
+        src: '/renderings/SchnittB-B.svg',
+        alt: 'Rendering 3'
+      }
+    ]"
+  />
+  <!--  <MarqueeLabel class='my-16' :label='secondLabel'/>-->
+  <!--  <BackgroundImageSection/>-->
+  <!--  <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert/>-->
   <footer class='w-full flex align-center justify-center text-white text-xs bg-purple-dark sm:py-2'>
     <NuxtLink to='/impressum'>Impressum</NuxtLink>
   </footer>
@@ -83,7 +140,7 @@ const tabsNavList: Ref<TabNavItem[]> = ref([
     imageSrc: '/tabs/GR 1.svg',
     description: '<span class="font-bold">Urvertrauen vs. Urmisstrauen</span>\n' +
         '\t(Säuglingsalter, 0-1 Jahr)\n' +
-        '<br> <br>'+
+        '<br> <br>' +
         '\tAufgabe: Entwicklung von Vertrauen in die Umwelt und die Betreuungspersonen.'
   },
   {

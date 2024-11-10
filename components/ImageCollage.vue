@@ -3,50 +3,75 @@
     <FadeInTransition>
       <div class='container mx-auto px-4'>
         <div class='w-3/4 mx-auto text-center'>
-          <h2 class='text-purple-dark text-3xl md:text-5xl font-bold uppercase leading-tight mb-4'>VERTICAL ABODE</h2>
-          <p class='text-purple-dark text-2xl md:text-3xl leading-normal mb-4'>ist zeitlos und warm</p>
-          <p class='text-purple-dark text-sm md:text-1xl leading-normal mb-4'>Das vertical Village ist
-            modern und konzentriert sich auf den Nutzen des Raumes. Es schafft eine vertikale Gemeinschaft in einem
-            dichter besiedelten Bereich in Berlin Kreuzberg. Das zentrale Atrium kreiert eine offene,
-            lichtdurchflutete und grüne Insel als Zentrum der Gemeinschaft.</p>
+          <h2 class='text-purple-dark text-3xl md:text-5xl font-bold uppercase leading-tight mb-4'>{{ title }}</h2>
+          <p class='text-purple-dark text-2xl md:text-3xl leading-normal mb-4'>{{ subtitle }}</p>
+          <p class='text-purple-dark text-sm md:text-1xl leading-normal mb-4'>{{ description }}</p>
         </div>
       </div>
-      <div class='bg-purple-dark collage-container mt-8 md:mt-16 px-4 w-full py-12'>
-        <div class='collage-left-side'>
-          <img src='/renderings/AnsichtEingang.svg' alt='Rendering 1'
-               class='bg-white collage-left-side-item rounded-3xl object-cover collage-left-side-first'>
-          <img src='/renderings/SchnittA-A.svg' alt='Rendering 2'
-               class='bg-white collage-left-side-item-above sm:w-1/6 rounded-3xl object-cover collage-left-side-second'>
+      <div class='bg-purple-dark collage-container mt-8 md:mt-16 px-4 w-full py-12 md:py-6'>
+        <!-- Erste Reihe -->
+        <div class='collage-row'>
+          <div class='collage-left-side'>
+            <img v-if="images[0]" :src='images[0].src' :alt='images[0].alt'
+                 class='bg-white collage-left-side-item rounded-3xl object-cover'>
+            <img v-if="images[1]" :src='images[1].src' :alt='images[1].alt'
+                 class='bg-white collage-left-side-item-above sm:w-1/6 rounded-3xl object-cover'>
+          </div>
+          <div class='collage-right-side'>
+            <img v-if="images[2]" :src='images[2].src' :alt='images[2].alt'
+                 class='bg-white collage-right-side-item rounded-3xl object-cover'>
+            <img v-if="images[3]" :src='images[3].src' :alt='images[3].alt'
+                 class='bg-white collage-right-side-item-above sm:w-1/6 rounded-3xl object-cover'>
+          </div>
         </div>
-        <div class='collage-right-side'>
-          <img src='/renderings/SchnittB-B.svg' alt='Rendering 3'
-               class='bg-white collage-right-side-item rounded-3xl object-cover'>
-<!--          <img src='/renderings/Persp4.jpg' alt='Rendering 4'-->
-<!--               class='collage-right-side-item-above sm:w-1/6 rounded-3xl object-cover'>-->
+
+        <!-- Zweite Reihe (wird nur angezeigt, wenn mehr als 4 Bilder vorhanden sind) -->
+        <div v-if="images.length > 4" class='collage-row second-row'>
+          <div class='collage-left-side'>
+            <img v-if="images[4]" :src='images[4].src' :alt='images[4].alt'
+                 class='bg-white collage-left-side-item rounded-3xl object-cover'>
+            <img v-if="images[5]" :src='images[5].src' :alt='images[5].alt'
+                 class='bg-white collage-left-side-item-above sm:w-1/6 rounded-3xl object-cover'>
+          </div>
+          <div class='collage-right-side'>
+            <img v-if="images[6]" :src='images[6].src' :alt='images[6].alt'
+                 class='bg-white collage-right-side-item rounded-3xl object-cover'>
+            <img v-if="images[7]" :src='images[7].src' :alt='images[7].alt'
+                 class='bg-white collage-right-side-item-above sm:w-1/6 rounded-3xl object-cover'>
+          </div>
         </div>
-<!--        <div class='collage-left-side'>-->
-<!--          <img src='/renderings/persp6.jpg' alt='Rendering 5'-->
-<!--               class='collage-left-side-item rounded-3xl object-cover collage-left-side-first'>-->
-<!--          <img src='/renderings/persp7.jpg' alt='Rendering 6'-->
-<!--               class='collage-left-side-item-above sm:w-1/6 rounded-3xl object-cover collage-left-side-second'>-->
-<!--        </div>-->
       </div>
     </FadeInTransition>
-
   </section>
 </template>
 
 <script setup lang='ts'>
+interface ImageInfo {
+  src: string;
+  alt: string;
+}
+
+interface Props {
+  title: string;
+  subtitle: string;
+  description: string;
+  images: ImageInfo[]; // Jetzt nur ein Array für alle Bilder
+}
+
+const props = defineProps<Props>();
 </script>
+
 <style scoped>
 @media (min-width: 320px) {
   .collage-container {
     display: flex;
     flex-direction: column;
+    gap: 4rem;
   }
 
-  .collage-left-side {
-    //margin-top: 2rem;
+  .collage-row {
+    display: flex;
+    flex-direction: column;
   }
 
   .collage-left-side-item-above {
@@ -63,7 +88,7 @@
 }
 
 @media (min-width: 640px) {
-  .collage-container {
+  .collage-row {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
