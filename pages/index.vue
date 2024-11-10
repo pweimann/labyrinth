@@ -134,7 +134,7 @@ const tabsNavList: Ref<TabNavItem[]> = ref([
   {
     title: 'Grundriss LV 2',
     imageSrc: '/tabs/GR 2.svg',
-    description: 'Autonomie vs. Scham + Zweifel \n' +
+    description: '<span class="font-bold">Autonomie vs. Scham + Zweifel</span> \n' +
         '\t(frühes Kleinkindalter, 1-3 Jahre)\n' +
         '<br> <br>' +
         '\tAufgabe: Erlernen von Autonomie und Selbstkontrolle, ohne Scham oder Zweifel an den eigenen Fähigkeiten zu entwickeln.'
@@ -142,7 +142,7 @@ const tabsNavList: Ref<TabNavItem[]> = ref([
   {
     title: 'Grundriss LV 3',
     imageSrc: '/tabs/GR 3.svg',
-    description: 'Initiative vs. \tSchuldgefühl\n' +
+    description: '<span class="font-bold">Initiative vs. \tSchuldgefühl</span>\n' +
         '\t (Kindergartenalter, 3-6 Jahre)\n' +
         '<br> <br>' +
         '\tAufgabe: Entwicklung von Initiative und Fähigkeit, Ziele zu setzen, ohne dabei ein übermäßiges Schuldgefühl zu empfinden.'
@@ -150,7 +150,7 @@ const tabsNavList: Ref<TabNavItem[]> = ref([
   {
     title: 'Grundriss LV 4',
     imageSrc: '/tabs/GR 4.svg',
-    description: 'Fleiß vs. Minderwertigkeitsgefühl\n' +
+    description: '<span class="font-bold">Fleiß vs. Minderwertigkeitsgefühl</span>\n' +
         '\t(Grundschulalter, 6-12 Jahre)\n' +
         '<br> <br>' +
         '\tAufgabe: Entwicklung von Fähigkeiten und Kompetenzen, um ein Gefühl der Kompetenz und Fleiß zu fördern.'
@@ -158,7 +158,7 @@ const tabsNavList: Ref<TabNavItem[]> = ref([
   {
     title: 'Grundriss LV 5',
     imageSrc: '/tabs/GR 5.svg',
-    description: 'Identität vs. Identitätsdiffusion \n' +
+    description: '<span class="font-bold">Identität vs. Identitätsdiffusion</span> \n' +
         '\t(Jugendalter, 12-18 Jahre)\n' +
         '<br> <br>' +
         '\tAufgabe: Herausforderung der Identitätsbildung und Integration verschiedener Rollen.'
@@ -166,7 +166,7 @@ const tabsNavList: Ref<TabNavItem[]> = ref([
   {
     title: 'Grundriss LV 6',
     imageSrc: '/tabs/GR 6.svg',
-    description: 'Intimität vs. Isolation \n' +
+    description: '<span class="font-bold">Intimität vs. Isolation</span> \n' +
         '\t(frühes Erwachsenenalter, 18-40 Jahre)\n' +
         '<br> <br>' +
         '\tAufgabe: Aufbau intimer Beziehungen und Bindungen zu anderen Menschen.'
@@ -174,7 +174,7 @@ const tabsNavList: Ref<TabNavItem[]> = ref([
   {
     title: 'Grundriss LV 7',
     imageSrc: '/tabs/GR 7.svg',
-    description: 'Generativität vs. Stagnation \n' +
+    description: '<span class="font-bold">Generativität vs. Stagnation</span> \n' +
         '\t(mittleres Erwachsenenalter, 40-65 Jahre)\n' +
         '<br> <br>' +
         '\tAufgabe: Beitrag zur Gesellschaft und Schaffung von etwas, das über die eigene Person hinausgeht.'
@@ -182,7 +182,7 @@ const tabsNavList: Ref<TabNavItem[]> = ref([
   {
     title: 'Grundriss LV 8',
     imageSrc: '/tabs/GR 8.svg',
-    description: 'Ich-Integrität vs. Verzweiflung \n' +
+    description: '<span class="font-bold">Ich-Integrität vs. Verzweiflung</span> \n' +
         '\t(spätes Erwachsenenalter, 65+ Jahre)\n' +
         '<br> <br>' +
         '\tAufgabe: Akzeptanz des eigenen Lebens und der eigenen Erfahrungen, ohne Verzweiflung über verpasste Chancen.'
