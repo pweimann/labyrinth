@@ -69,8 +69,8 @@
     </FadeInTransition>
     <MarqueeLabel class='mt-8' :label='secondLabel'/>
     <ImageCollage
-        title="TODO"
-        description="TODOODODO"
+        title="Die Medien"
+        description="Im Labyrinth sind moderne Medien integriert, um eine immersive und interaktive Raumerfahrung zu schaffen. Virtuelle Realität (VR) ermöglicht Besuchern ein digitales Erlebnis des Labyrinths ohne es physisch zu betreten. Mit Augmented Reality (AR) werden digitale Hinweise und versteckte Elemente über Smartphones oder AR-Brillen eingeblendet und bieten zusätzliche Orientierung und künstlerische Erweiterungen. Interaktive Licht- und Soundinstallationen reagieren auf Bewegungen, ändern die Atmosphäre und erzeugen räumliche Tiefe. Zusätzlich verstärken Hologramme und Sensorik durch visuelle und akustische Signale die Verbindung zwischen physischer und virtueller Welt."
         :images="[
           {
             src: '/collage/Collage LV 1 ohne Hintergrund.png',
