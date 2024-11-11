@@ -40,7 +40,7 @@
         :interval="4000"/>
     <TabSection :tabs-nav-list='tabsNavList' title='Grundrisse'/>
     <ImageCollage
-        title="TODO"
+        title="Der Raum"
         description="Die Durchwegung des Labyrinths führt die Besucher durch acht Ebenen, die jeweils einer Phase der psychosozialen Entwicklung nach Erik H. Erikson entsprechen. Jede Ebene symbolisiert eine spezifische Herausforderung, von Urvertrauen in der ersten Ebene bis zur Ich-Integrität in der letzten. Die Besucher bewegen sich dabei durch verschiedene räumliche Sequenzen, die bewusst so gestaltet sind, dass sie unterschiedliche Emotionen hervorrufen, wie etwa Neugier, Unsicherheit oder Erleichterung. Diese räumliche und emotionale Reise erfordert ständige Entscheidungen und Reflexion, wodurch das Labyrinth auch zu einer metaphorischen Selbsterfahrung wird."
         :images="[
           {
